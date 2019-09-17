@@ -47,7 +47,7 @@ export default class ActivityPage extends Component {
                                        autoFocus={true}
                                        underlineColorAndroid='transparent'
                                        keyboardType={"numeric"}
-                                       style={{padding: 0, paddingLeft: size(2)}}
+                                       style={{padding: 0, paddingLeft: size(5)}}
                                        onChangeText={text => this.setState({phoneNum : text})}
                             >
                             </TextInput>
@@ -62,7 +62,7 @@ export default class ActivityPage extends Component {
                                 <TextInput placeholder={'请输入验证码'}
                                            underlineColorAndroid='transparent'
                                            keyboardType={"numeric"}
-                                           style={{padding: 0, paddingLeft: size(2)}}
+                                           style={{padding: 0, paddingLeft: size(5)}}
                                 >
                                 </TextInput>
                             </View>
@@ -88,7 +88,7 @@ export default class ActivityPage extends Component {
                     ?
                     <View style={styles.netAgeGift_ruleBox}>
                         <View style={styles.netAgeGift_ruleMain}>
-                            <Text style={styles.netAgeGift_ruleTitle}>活动规则</Text>
+                          <Text style={styles.netAgeGift_ruleTitle}>活动规则</Text>
                             <ScrollView style={styles.netAgeGift_ruleDes} showsVerticalScrollIndicator={false}><Text
                                 style={styles.netAgeGift_ruleDesText}>1、促销期：2019年8月7日-2019年12月31日。
                                 2、本活动仅限指定的电信互联网卡套餐领取，号码如处于黑名单、欠费停机、停机保号等异常状态，需用户缴清费用后，方可参加活动。
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
         width: size(100),
         height: size(25),
         position: 'absolute',
-        top: size(25),
+        top: size(30),
         right: size(40),
     },
     jqrImgStyle: {
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
     },
     mainButton: {
         alignItems: 'center',
-        marginTop: size(10)
+        marginTop: size(20)
     },
     textInputStyle: {
         backgroundColor: '#fff',
@@ -239,7 +239,7 @@ const styles = StyleSheet.create({
         borderRadius: size(8),
         borderWidth: size(2),
         borderColor: '#fff',
-        marginTop:'16%',
+        marginTop:'20%',
     },
     netAgeGift_ruleTitle: {
         color: '#fff',
@@ -251,6 +251,7 @@ const styles = StyleSheet.create({
     netAgeGift_ruleDes: {
         width: '92%',
         marginLeft: '4%',
+        marginBottom:size(-30)
     },
     netAgeGift_ruleDesText: {
         color: '#fff',
